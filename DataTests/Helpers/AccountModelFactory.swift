@@ -1,6 +1,14 @@
 import Foundation
 import Domain
 
-func makeAcountModel() -> AccountModel {
-    return AccountModel(id: "um id", name: "Nome legal", email: "emailLegal@estudo.com", password: "22930293")
+func makeAccountModel() -> AccountModel {
+    return AccountModel(accessToken: "any_token")
+}
+
+func makeAddAccountModel() -> AddAccountModel {
+    return AddAccountModel(name: "any_name", email: "any_email@mail.com", password: "any_password", passwordConfirmation: "any_password")
+}
+
+func makeAuthenticationModel() -> AuthenticationModel {
+    return AuthenticationModel(email: "any_email@mail.com", password: "any_password")
 }
